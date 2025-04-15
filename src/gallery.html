@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>gallery</title>
-    <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,6 +16,9 @@
     <div class="logo">
         Moja strona o czymś
     </div>
+    <div id="clock" class="clock">
+    </div>
+
 </header>
 
 <nav>
@@ -19,36 +26,47 @@
         <li><a href="home.html">Home</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
-
     </ul>
 </nav>
 
+
+<h2 style="text-align: center; margin-top: 40px;">Photo</h2>
 <div class="image-grid">
     <div class="image-item">
-        <img src="photo/image1.jpg" alt="Opis zdjęcia 1">
+        <img src="photo/2002.jpeg" alt="Opis zdjęcia 1">
     </div>
     <div class="image-item">
-        <img src="photo/image2.jpg" alt="Opis zdjęcia 2">
+        <img src="photo/2006.jpeg" alt="Opis zdjęcia 2">
     </div>
     <div class="image-item">
-        <img src="photo/image3.jpg" alt="Opis zdjęcia 3">
+        <img src="photo/2010.jpeg" alt="Opis zdjęcia 3">
     </div>
     <div class="image-item">
-        <img src="photo/image4.jpg" alt="Opis zdjęcia 4">
+        <img src="photo/2014.jpeg" alt="Opis zdjęcia 4">
     </div>
     <div class="image-item">
-        <img src="photo/image5.jpg" alt="Opis zdjęcia 5">
+        <img src="photo/2018.jpeg" alt="Opis zdjęcia 5">
     </div>
     <div class="image-item">
-        <img src="photo/image6.jpg" alt="Opis zdjęcia 6">
+        <img src="photo/2022.jpeg" alt="Opis zdjęcia 6">
     </div>
 </div>
 
+<h2 style="text-align: center; margin-top: 40px;">Movie</h2>
+<div class="video-grid">
+    <div class="video-item">
+        <video controls>
+            <source src="movie/video1.mp4" type="video/mp4">
+            Twoja przeglądarka nie obsługuje elementu <code>video</code>.
+        </video>
+    </div>
+</div>
 
 <footer>
     Piotr Podkanowicz All rights reserved.
 </footer>
 
+<script src="clock.js"></script>
 
 </body>
 </html>

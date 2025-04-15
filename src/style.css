@@ -1,14 +1,20 @@
-body{
+body {
+    font-family: 'Roboto Mono', monospace;
     background: #000;
     color: #fff;
-
+    margin: 0;
+    padding: 0;
 }
+
 
 header {
     background-color: #333;
     color: white;
     padding: 20px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 header .logo {
@@ -16,7 +22,22 @@ header .logo {
     font-weight: bold;
 }
 
-/* Navbar styling */
+
+.clock {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+
 nav {
     text-align: center;
     background-color: #444;
@@ -70,7 +91,7 @@ form label {
     font-weight: bold;
 }
 
-form input[type="text"], form input[type = "email"],
+form input[type="text"], form input[type="email"],
 form select,
 form textarea {
     width: 98%;
@@ -81,15 +102,13 @@ form textarea {
     background-color: #333;
     color: white;
     font-size: 1rem;
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-
+    font-family: 'Roboto Mono', monospace;
 }
 
 form textarea {
     height: 100px;
     resize: vertical;
 }
-
 
 form input[type="submit"] {
     background-color: #333;
@@ -102,36 +121,50 @@ form input[type="submit"] {
     transition: background-color 0.3s;
 }
 
-
-
 form input[type="submit"]:hover {
     background-color: #555;
 }
 
-/* Styl dla kontenera grid */
 .image-grid {
     display: grid;
     flex-wrap: wrap;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Tworzy responsywny grid */
-    gap: 20px; /* Odstępy między zdjęciami */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
-/* Styl dla pojedynczego elementu grid */
 .image-item {
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Cień wokół każdego zdjęcia */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Styl dla obrazów */
 .image-item img {
-    width: 100%; /* Obrazki zajmują pełną szerokość kontenera */
-    height: auto; /* Zachowanie proporcji obrazu */
-    transition: transform 0.3s ease; /* Płynna animacja przy najechaniu */
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-/* Efekt przy najechaniu na obraz */
 .image-item:hover img {
-    transform: scale(1.1); /* Powiększenie obrazu przy najechaniu */
+    transform: scale(1.1);
+}
+
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-item {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.video-item video {
+    width: 100%;
+    border-radius: 8px;
 }

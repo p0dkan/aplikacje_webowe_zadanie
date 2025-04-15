@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>contact</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -11,6 +15,8 @@
 <header>
     <div class="logo">
         Moja strona o czymś
+    </div>
+    <div id="clock" class="clock">
     </div>
 </header>
 
@@ -29,8 +35,11 @@
     <br><br>
 
     <label for="subject">Temat wiadomości:</label>
-    <input type="text" id="subject" name="subject" placeholder="Wpisz temat wiadomości" required>
-    <br><br>
+    <select id="subject" name="subject" required>
+        <option value="ogólne">Pytanie ogólne</option>
+        <option value="info">Dodatkowe informacje</option>
+        <option value="inne">Inne</option>
+    </select>
 
     <label for="message">Wiadomość:</label>
     <textarea id="message" name="message" placeholder="Wpisz swoją wiadomość" required></textarea>
@@ -44,6 +53,8 @@
 <footer>
     Piotr Podkanowicz All rights reserved.
 </footer>
+
+<script src="clock.js"></script>
 
 </body>
 </html>
